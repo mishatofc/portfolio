@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -9,6 +10,11 @@ body {
     font-family: 'Poppins', sans-serif;
 
 }
+
+/* .bn-name{
+    font-family: 'Baloo Da 2', cursive;
+
+} */
 
 .container {
 
@@ -34,36 +40,36 @@ a {
 
 
 .logo {
-   max-width: 50px;
+    max-width: 50px;
 
 
 }
 
-ul{
-display: flex;
+ul {
+    display: flex;
 
 }
 
 
-ul li{
+ul li {
     font-size: 20px;
-margin-right: 69px;
-text-transform: uppercase;
+    margin-right: 69px;
+    text-transform: uppercase;
 
 }
 
-ul li a{
+ul li a {
     color: #363636;
 }
 
 ul li:nth-child(4) {
 
-margin-right: 0;
+    margin-right: 0;
 
 }
 
 /* hero section styling */
-body{
+body {
 
 
     background-color: #eeeeee;
@@ -71,72 +77,73 @@ body{
 
 /* hero title and subtitles */
 
-.hero-title{
-font-size: 60px;
-padding-top: 100px;
-font-weight: 600;
-animation: text-wave 5s infinite;
+.hero-title {
+    font-size: 60px;
+    padding-top: 100px;
+    font-weight: 600;
+    animation: text-wave 14s infinite;
 
 }
 
-.hero-subtitle{
-    animation: text-wave 5s infinite;
-padding-top: 40px;
+.hero-subtitle {
+    animation: text-wave 9s infinite;
+    padding-top: 40px;
 
 }
 
-.work-link{
-    animation: wave 4s infinite;
+.work-link {
+    animation: wave 2s infinite;
     padding-top: 60px;
-
+    font-size: 20px;
 }
 
 
-.hero-link{
-padding-top: 200px;
+.hero-link {
+    padding-top: 200px;
 
 }
 
 div a {
-color: #363636;
-text-transform: uppercase;
-font-weight: bold;
+    color: #363636;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* circle blob */
 
-.circle{
+.circle {
 
-position: absolute;
-width: 707px;
-height: 707px;
-background: #FFFFFF;
-border-radius: 50%;
-left: 30%;
-top:150px ;
-z-index: -1;
-animation: img 4s infinite ;
+    position: absolute;
+    width: 707px;
+    height: 707px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    left: 30%;
+    top: 150px;
+    z-index: -1;
+    animation: waveOne 4s infinite;
 }
 
-.circle-location{
+/* .circle-location{
 
    
    
 
 
-}
+} */
 
 
-.img-hero{
-animation: img 5s infinite ;
-margin-top: 60px;
-
+.img-hero {
+    animation: waveOne 5s infinite;
+    margin-top: 60px;
+    right: 100px;
+    max-width: 500px;
 
 
 }
 
 /* about section */
-#about{
+#about {
 
 
     height: 100vh
@@ -148,6 +155,14 @@ margin-top: 60px;
 
 
 
+
+/* about section */
+
+#about {
+    background-color: #363636;
+
+
+}
 
 
 
@@ -164,7 +179,7 @@ margin-top: 60px;
 
 
 
-@keyframes img {
+@keyframes waveOne {
     0% {
         transform: translatey(0px);
         -webkit-transform: translatey(0px);
@@ -246,4 +261,3 @@ margin-top: 60px;
         -o-transform: translatey(0px);
     }
 }
-
