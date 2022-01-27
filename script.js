@@ -1,24 +1,25 @@
-let menuIcon = document.querySelector('.menuIcon');
-let nav = document.querySelector('.overlay-menu');
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
 
-menuIcon.addEventListener('click', () => {
-    if (nav.style.transform != 'translateX(0%)') {
-        nav.style.transform = 'translateX(0%)';
-        nav.style.transition = 'transform 0.2s ease-out';
-    } else { 
-        nav.style.transform = 'translateX(-100%)';
-        nav.style.transition = 'transform 0.2s ease-out';
-    }
-});
+var currentScrollpos = window.pageYOffset;
+if(prevScrollpos > currentScrollpos) {
+      document.getElementById("navbar").style.top = "0";
+} else {
+      document.getElementById("navbar").style.top = "-100px";
+}
+
+prevScrollpos = currentScrollpos;
+
+}
 
 
-// Toggle Menu Icon ========================================
-let toggleIcon = document.querySelector('.menuIcon');
 
-toggleIcon.addEventListener('click', () => {
-    if (toggleIcon.className != 'menuIcon toggle') {
-        toggleIcon.className += ' toggle';
-    } else {
-        toggleIcon.className = 'menuIcon';
-    }
-});
+// Animation
+
+navlinks.forEach((li, i) => {
+    li.style.animationDelay = 0 + i * 140 + "ms";
+})
+
+
+
+
